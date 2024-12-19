@@ -1,0 +1,91 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-top: 50px;
+}
+
+canvas {
+  border: 1px solid black;
+  cursor: crosshair;
+  width: 500px; /* CSS width */
+  height: 500px; /* CSS height */
+}
+
+button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.canvas-container {
+  display: flex; /* Use Flexbox layout */
+  gap: 10px; /* Add space between canvases */
+  justify-content: center; /* Center horizontally */
+}
+
+img {
+  border: 1px solid black; /* Optional for better visibility */
+}
+
+.button-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.text-display {
+  text-align: center; /* Center the text horizontally */
+  margin: 0 auto; /* Center the div horizontally */
+  padding: 0; /* Remove internal padding */
+  max-width: 600px; /* Define the maximum width of the bounding box */
+  width: 100%; /* Ensure it wraps the text */
+  box-sizing: border-box; /* Include padding and border in the width calculation */
+  outline: none; /* Remove any focus outlines */
+}
+
+.text-display h2 {
+  font-size: 24px; /* Larger font for the heading */
+  color: #000; /* Pure black text */
+  margin-bottom: 10px; /* Add space below the heading */
+}
+
+.text-display p {
+  font-size: 16px; /* Standard font size for paragraph */
+  color: #000; /* Pure black text */
+  line-height: 1.6; /* Better line spacing for readability */
+  margin: 0; /* Remove default paragraph margins */
+}
+
+.image-gallery {
+  text-align: center;
+  margin-top: 30px; /* Space above the gallery */
+}
+
+.gallery {
+  display: flex; /* Horizontal layout for images */
+  justify-content: center; /* Center the images */
+  gap: 15px; /* Space between images */
+  margin-top: 20px; /* Space between dropdown and images */
+}
+
+.gallery img {
+  width: 700px; /* Set the width of each image */
+  height: 500px; /* Set the height of each image */
+  border: 1px solid #ddd; /* Optional border for clarity */
+  border-radius: 4px; /* Optional rounded corners */
+  object-fit: cover; /* Ensure the images fit within the set dimensions */
+}
+
+.description {
+  max-width: 700px; /* Limit the width to prevent overly long lines */
+  margin: 10px auto; /* Center the text and add some space above and below */
+  line-height: 1.6; /* Improve readability with better line spacing */
+  font-size: 16px; /* Standard font size for easy reading */
+  color: #333; /* Slightly dark gray text for better contrast */
+  text-align: justify; /* Ensure text wraps and aligns nicely */
+  word-wrap: break-word; /* Allow long words or URLs to wrap */
+}
+
+select {
+  padding: 5px;
+  font-size: 16px;
+}

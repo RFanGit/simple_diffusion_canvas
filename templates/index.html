@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Draw and Save</title>
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+
+<h1>Draw Your Image</h1>
+<div class="canvas-container">
+  <canvas id="drawCanvas" width="500" height="500"></canvas>
+  <img id="imageDisplay" src="" alt="Saved Image" width="500" height="500">
+</div>
+<!-- Buttons -->
+<div class="button-container">
+  <button id="clearBtn">Clear</button>
+  <button id="saveBtn">Save</button>
+</div>
+
+<div class="text-display">
+  <h2>Welcome to My Website</h2>
+  <p>
+    This website is my from-scratch attempt at using diffusion techniques to enhance drawings by denoising them into versions with smoother lines. 
+    It showcases different models and their capabilities in improving the quality of drawings.
+  </p>
+</div>
+
+<div class="image-gallery">
+  <h3>Image Gallery</h3>
+  <select id="imageSelector">
+    <option value="1" selected>Autoencoder (w/noise)</option>
+    <option value="2">Autoencoder</option>
+    <option value="3">Simple Neural Net (w/noise)</option>
+    <option value="4">Simple Neural Net</option>
+  </select>
+  <p id="imageDescription" class="description">This model denoises drawings by applying an autoencoder trained with noisy input data. Although it does not perfectly fit my training data, it has learned general principles for smoothening lines.</p>
+  <div class="gallery">
+    <img id="mainImage" src="/static/images/NN_AutoEncoder_(With_Noise).png" alt="Autoencoder with Noise">
+  </div>
+</div>
+
+
+
+<script src="/static/js/app.js"></script>
+</body>
+</html>

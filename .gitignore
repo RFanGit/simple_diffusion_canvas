@@ -1,0 +1,23 @@
+# Ignore backend folder
+backend/
+
+# Virtual environment
+myenv/
+
+# Python files
+*.pyc
+__pycache__/
+
+# Logs
+*.log
+
+# System files
+.DS_Store
+Thumbs.db
+
+# IDE settings
+.vscode/
+.idea/
+
+# Sensitive environment variables
+.env
